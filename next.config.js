@@ -8,5 +8,6 @@ module.exports = {
         hostname: "openweathermap.org",
       }
     ]
-  }
+  },
+ 
 };
