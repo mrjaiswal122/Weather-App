@@ -104,7 +104,7 @@ function toogleDarkMode() {
               className="text-2xl  text-gray-400 hover:opacity-80 cursor-pointer"
             />
             <MdOutlineLocationOn className="text-3xl dark:text-dark" />
-            <p className="text-slate-900/80 text-lg dark:text-dark capitalize font-bold "> {place} </p>
+            <p className="text-slate-900/80 text-sm dark:text-dark capitalize font-bold "> {place} </p>
             <div className="relative hidden md:flex">
               {/* SearchBox */}
 
