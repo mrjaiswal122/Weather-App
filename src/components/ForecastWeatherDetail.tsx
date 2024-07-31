@@ -31,7 +31,7 @@ export default function ForecastWeatherDetail(
     description
   } = props;
   return (
-    <Container className="gap-4">
+    <Container className="gap-4 dark:bg-dark">
       {/* left */}
       <section className=" flex gap-4 items-center px-4  ">
         <div className=" flex flex-col gap-1 items-center">
@@ -47,6 +47,11 @@ export default function ForecastWeatherDetail(
             <span> Feels like</span>
             <span>{convertKelvinToCelsius(feels_like ?? 0)}°</span>
           </p>
+          <p className="text-xs space-x-1 whitespace-nowrap">
+            <span>{convertKelvinToCelsius(temp_min?? 0)}°↓</span>
+            <span>{convertKelvinToCelsius(temp_max?? 0)}°↑</span>
+          </p>
+
           <p className="capitalize"> {description}</p>
         </div>
       </section>
